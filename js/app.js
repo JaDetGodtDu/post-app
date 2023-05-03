@@ -49,10 +49,12 @@ function initApp() {
 // ============== events ============== //
 
 function showCreatePostDialog() {
+  console.log("create post clicked")
   document.querySelector("#dialog-create-post").showModal(); // show create dialog
 }
 
 async function createPostClicked(event) {
+  
   const form = event.target; // or "this"
   // extract the values from inputs from the form
   const title = form.title.value;

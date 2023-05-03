@@ -12,6 +12,7 @@ async function getPosts() {
   return posts; // return posts
 }
 async function createPost(title, body, image) {
+  console.log("create post")
   const newPost = { title, body, image }; // create new post object
   const json = JSON.stringify(newPost); // convert the JS object to JSON string
   // POST fetch request with JSON in the body
